@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <label for="inputText">Texto a encriptar:</label>
+        <input type="text" id="inputText" />
+        <button onclick="encrypt()">Encriptar</button>
+        <p id="outputText"></p>
+        <!-- Agrega el atributo 'enctype' al formulario para permitir la carga de archivos -->
+        <form id="fileForm" enctype="multipart/form-data">
+            <label for="fileInput">Seleccionar archivo:</label>
+            <input type="file" id="fileInput" />
+            <button type="button" onclick="encryptFile()">Encriptar Archivo</button>
+        </form>
+        <p id="outputText"></p>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
